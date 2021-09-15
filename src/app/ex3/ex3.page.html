@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>exercicio 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Digite o salario do funcionario</ion-label>
+    <ion-input type="number" [(ngModel)]="salario"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Digite a porcetagem do aumento salarial (EM %)</ion-label>
+    <ion-input type="number" [(ngModel)]="percent"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="Calc()">
+    Calcular
+  </ion-button>
+
+  <ion-text>
+    <h1 *ngIf="mens">{{mens}}</h1>
+  </ion-text>
+</ion-content>

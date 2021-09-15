@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>exercicio 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Digite nome do aluno</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Digite a primeira nota</ion-label>
+    <ion-input type="number" [(ngModel)]="n1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Digite a segunda nota</ion-label>
+    <ion-input type="number" [(ngModel)]="n2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Digite a terceira nota</ion-label>
+    <ion-input type="number" [(ngModel)]="n3"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Digite a quarta nota</ion-label>
+    <ion-input type="number" [(ngModel)]="n4"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Digite a quinta nota</ion-label>
+    <ion-input type="number" [(ngModel)]="n5"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="Calc()">
+    Calcular
+  </ion-button>
+
+  <ion-text>
+    <h1 *ngIf="mens">{{mens}}</h1>
+  </ion-text>
+</ion-content>
